@@ -1,0 +1,121 @@
+{
+  "uid" : "30570daebb127acf",
+  "name" : "test_ingredient_counter_increases",
+  "fullName" : "tests.ui.test_constructor.TestConstructor#test_ingredient_counter_increases",
+  "historyId" : "834abfd5f968d5dc569621ed02592bff",
+  "time" : {
+    "start" : 1778164680623,
+    "stop" : 1778164681532,
+    "duration" : 909
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2 == (0 + 1)",
+  "statusTrace" : "self = <ui.test_constructor.TestConstructor object at 0x0000020C0C3B20F0>\nmain_page = <pages.main_page.MainPage object at 0x0000020C0C54B5C0>\n\n    def test_ingredient_counter_increases(self, main_page):\n        main_page.reset_cart()\n        initial = int(main_page.get_ingredient_counter())\n        main_page.drag_and_drop(main_page.INGREDIENT, main_page.TARGET_CONSTRUCTOR)\n        new = int(main_page.get_ingredient_counter())\n>       assert new == initial + 1\nE       assert 2 == (0 + 1)\n\ntests\\ui\\test_constructor.py:32: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1778164650937,
+      "stop" : 1778164650971,
+      "duration" : 34
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1778164677218,
+      "stop" : 1778164680622,
+      "duration" : 3404
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1778164675322,
+      "stop" : 1778164677218,
+      "duration" : 1896
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1778164681631,
+      "stop" : 1778164683747,
+      "duration" : 2116
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.ui"
+  }, {
+    "name" : "suite",
+    "value" : "test_constructor"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConstructor"
+  }, {
+    "name" : "host",
+    "value" : "HOME-PC"
+  }, {
+    "name" : "thread",
+    "value" : "3944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.ui.test_constructor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "30570daebb127acf.json",
+  "parameterValues" : [ ]
+}

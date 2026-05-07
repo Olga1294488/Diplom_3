@@ -1,0 +1,69 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 2 == (0 + 1)",
+      "children" : [ {
+        "name" : "test_ingredient_counter_increases",
+        "uid" : "30570daebb127acf",
+        "parentUid" : "04107f71ad0b0945bf9e995e7379e22a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1778164680623,
+          "stop" : 1778164681532,
+          "duration" : 909
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "04107f71ad0b0945bf9e995e7379e22a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0xf6ad03+10893]\n\tchromedriver!GetHandleVerifier [0xf6ae34+109c4]\n\tchromedriver!(No symbol) [0xd81ea0]\n\tchromedriver!(No symbol) [0xdcb26a]\n\tchromedriver!(No symbol) [0xdcb50b]\n\tchromedriver!(No symbol) [0xe0d022]\n\tchromedriver!(No symbol) [0xded7c4]\n\tchromedriver!(No symbol) [0xe0a814]\n\tchromedriver!(No symbol) [0xded516]\n\tchromedriver!(No symbol) [0xdc08c9]\n\tchromedriver!(No symbol) [0xdc1684]\n\tchromedriver!GetHandleVerifier [0x12031c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x11fe7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x121ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0xf844d8+2a068]\n\tchromedriver!GetHandleVerifier [0xf8bddd+3196d]\n\tchromedriver!GetHandleVerifier [0xf738e8+19478]\n\tchromedriver!GetHandleVerifier [0xf73a95+19625]\n\tchromedriver!GetHandleVerifier [0xf5cd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x76b9fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x76f882ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x76f8827e+ee]",
+      "children" : [ {
+        "name" : "test_total_orders_counter_increases",
+        "uid" : "22a4088cedbec365",
+        "parentUid" : "59e5172a8cdcab346321552025a05d60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1778164687844,
+          "stop" : 1778164698057,
+          "duration" : 10213
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_today_orders_counter_increases",
+        "uid" : "47163aaf2771096a",
+        "parentUid" : "59e5172a8cdcab346321552025a05d60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1778164705460,
+          "stop" : 1778164715681,
+          "duration" : 10221
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_number_appears_in_work",
+        "uid" : "57fd0870f7370ec5",
+        "parentUid" : "59e5172a8cdcab346321552025a05d60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1778164725632,
+          "stop" : 1778164736949,
+          "duration" : 11317
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "59e5172a8cdcab346321552025a05d60"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

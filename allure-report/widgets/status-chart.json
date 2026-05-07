@@ -1,0 +1,81 @@
+[ {
+  "uid" : "25c946fef8bb9aa0",
+  "name" : "test_ingredient_modal_opens",
+  "time" : {
+    "start" : 1778164666635,
+    "stop" : 1778164666689,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35841c152a81a79e",
+  "name" : "test_close_modal_by_cross",
+  "time" : {
+    "start" : 1778164672658,
+    "stop" : 1778164673229,
+    "duration" : 571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57fd0870f7370ec5",
+  "name" : "test_order_number_appears_in_work",
+  "time" : {
+    "start" : 1778164725632,
+    "stop" : 1778164736949,
+    "duration" : 11317
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "47163aaf2771096a",
+  "name" : "test_today_orders_counter_increases",
+  "time" : {
+    "start" : 1778164705460,
+    "stop" : 1778164715681,
+    "duration" : 10221
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f499f4b6cadffd22",
+  "name" : "test_order_feed_navigation",
+  "time" : {
+    "start" : 1778164660883,
+    "stop" : 1778164660932,
+    "duration" : 49
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30570daebb127acf",
+  "name" : "test_ingredient_counter_increases",
+  "time" : {
+    "start" : 1778164680623,
+    "stop" : 1778164681532,
+    "duration" : 909
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "22a4088cedbec365",
+  "name" : "test_total_orders_counter_increases",
+  "time" : {
+    "start" : 1778164687844,
+    "stop" : 1778164698057,
+    "duration" : 10213
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e6b71dc7c85169a8",
+  "name" : "test_constructor_navigation",
+  "time" : {
+    "start" : 1778164654884,
+    "stop" : 1778164654990,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

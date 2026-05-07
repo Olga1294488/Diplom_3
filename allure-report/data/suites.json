@@ -1,0 +1,121 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests.ui",
+    "children" : [ {
+      "name" : "test_constructor",
+      "children" : [ {
+        "name" : "TestConstructor",
+        "children" : [ {
+          "name" : "test_constructor_navigation",
+          "uid" : "e6b71dc7c85169a8",
+          "parentUid" : "11fa30a6fed6db55d2fe45eca515bc48",
+          "status" : "passed",
+          "time" : {
+            "start" : 1778164654884,
+            "stop" : 1778164654990,
+            "duration" : 106
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_order_feed_navigation",
+          "uid" : "f499f4b6cadffd22",
+          "parentUid" : "11fa30a6fed6db55d2fe45eca515bc48",
+          "status" : "passed",
+          "time" : {
+            "start" : 1778164660883,
+            "stop" : 1778164660932,
+            "duration" : 49
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_ingredient_modal_opens",
+          "uid" : "25c946fef8bb9aa0",
+          "parentUid" : "11fa30a6fed6db55d2fe45eca515bc48",
+          "status" : "passed",
+          "time" : {
+            "start" : 1778164666635,
+            "stop" : 1778164666689,
+            "duration" : 54
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_close_modal_by_cross",
+          "uid" : "35841c152a81a79e",
+          "parentUid" : "11fa30a6fed6db55d2fe45eca515bc48",
+          "status" : "passed",
+          "time" : {
+            "start" : 1778164672658,
+            "stop" : 1778164673229,
+            "duration" : 571
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_ingredient_counter_increases",
+          "uid" : "30570daebb127acf",
+          "parentUid" : "11fa30a6fed6db55d2fe45eca515bc48",
+          "status" : "failed",
+          "time" : {
+            "start" : 1778164680623,
+            "stop" : 1778164681532,
+            "duration" : 909
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "11fa30a6fed6db55d2fe45eca515bc48"
+      } ],
+      "uid" : "cc203373dce8505b664024dd4060ce27"
+    }, {
+      "name" : "test_order_feed",
+      "children" : [ {
+        "name" : "TestOrderFeed",
+        "children" : [ {
+          "name" : "test_total_orders_counter_increases",
+          "uid" : "22a4088cedbec365",
+          "parentUid" : "47bc1834aa5ae0a9075ff3627d1c2e98",
+          "status" : "broken",
+          "time" : {
+            "start" : 1778164687844,
+            "stop" : 1778164698057,
+            "duration" : 10213
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_today_orders_counter_increases",
+          "uid" : "47163aaf2771096a",
+          "parentUid" : "47bc1834aa5ae0a9075ff3627d1c2e98",
+          "status" : "broken",
+          "time" : {
+            "start" : 1778164705460,
+            "stop" : 1778164715681,
+            "duration" : 10221
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_order_number_appears_in_work",
+          "uid" : "57fd0870f7370ec5",
+          "parentUid" : "47bc1834aa5ae0a9075ff3627d1c2e98",
+          "status" : "broken",
+          "time" : {
+            "start" : 1778164725632,
+            "stop" : 1778164736949,
+            "duration" : 11317
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "47bc1834aa5ae0a9075ff3627d1c2e98"
+      } ],
+      "uid" : "831eeb8607c056b76f43a7348c2a8ad0"
+    } ],
+    "uid" : "3965134f6f8c1be9f46795103934f428"
+  } ]
+}
