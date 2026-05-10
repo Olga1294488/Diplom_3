@@ -1,32 +1,41 @@
+import allure
+import pytest
 from pages.ingredient_modal import IngredientModal
-from selenium.webdriver.support import expected_conditions as EC
-from data import CONSTRUCTOR_HEADER
+from data import CONSTRUCTOR_HEADER   # предполагается, что в data.py есть эта константа
 
+@allure.epic("Stellar Burgers UI")
+@allure.feature("Конструктор")
 class TestConstructor:
+
+    @allure.title("Переход по клику на «Конструктор»")
     def test_constructor_navigation(self, main_page):
         main_page.click_order_feed()
         main_page.click_constructor()
         assert CONSTRUCTOR_HEADER in main_page.driver.page_source
 
+    @allure.title("Переход по клику на «Лента заказов»")
     def test_order_feed_navigation(self, main_page):
         main_page.click_order_feed()
         assert "feed" in main_page.driver.current_url
 
+    @allure.title("Клик на ингредиент открывает всплывающее окно с деталями")
     def test_ingredient_modal_opens(self, main_page):
         main_page.click_ingredient()
         modal = IngredientModal(main_page.driver)
         modal.wait_visibility(modal.MODAL)
-        assert modal.find_element(modal.MODAL).is_displayed()
+        assert modal.is_modal_displayed()   # используем метод Page Object
 
+    @allure.title("Всплывающее окно закрывается кликом по крестику")
     def test_close_modal_by_cross(self, main_page):
         main_page.click_ingredient()
         modal = IngredientModal(main_page.driver)
+        modal.wait_visibility(modal.MODAL)
         modal.close_modal()
-        modal.wait.until(EC.invisibility_of_element_located(modal.MODAL))
+        assert not modal.is_modal_displayed()
 
+    @allure.title("При добавлении ингредиента счётчик увеличивается")
     def test_ingredient_counter_increases(self, main_page):
-        main_page.reset_cart()
         initial = int(main_page.get_ingredient_counter())
-        main_page.drag_and_drop(main_page.INGREDIENT, main_page.TARGET_CONSTRUCTOR)
+        main_page.drag_and_drop_ingredient()   # или add_ingredient_via_button()
         new = int(main_page.get_ingredient_counter())
         assert new == initial + 1

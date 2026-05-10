@@ -6,14 +6,14 @@
     "children" : [ {
       "name" : "AssertionError: assert 2 == (0 + 1)",
       "children" : [ {
-        "name" : "test_ingredient_counter_increases",
-        "uid" : "30570daebb127acf",
+        "name" : "При добавлении ингредиента счётчик увеличивается",
+        "uid" : "b1440e7233bdddff",
         "parentUid" : "04107f71ad0b0945bf9e995e7379e22a",
         "status" : "failed",
         "time" : {
-          "start" : 1778164680623,
-          "stop" : 1778164681532,
-          "duration" : 909
+          "start" : 1778383713709,
+          "stop" : 1778383714302,
+          "duration" : 593
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -24,45 +24,45 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0xf6ad03+10893]\n\tchromedriver!GetHandleVerifier [0xf6ae34+109c4]\n\tchromedriver!(No symbol) [0xd81ea0]\n\tchromedriver!(No symbol) [0xdcb26a]\n\tchromedriver!(No symbol) [0xdcb50b]\n\tchromedriver!(No symbol) [0xe0d022]\n\tchromedriver!(No symbol) [0xded7c4]\n\tchromedriver!(No symbol) [0xe0a814]\n\tchromedriver!(No symbol) [0xded516]\n\tchromedriver!(No symbol) [0xdc08c9]\n\tchromedriver!(No symbol) [0xdc1684]\n\tchromedriver!GetHandleVerifier [0x12031c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x11fe7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x121ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0xf844d8+2a068]\n\tchromedriver!GetHandleVerifier [0xf8bddd+3196d]\n\tchromedriver!GetHandleVerifier [0xf738e8+19478]\n\tchromedriver!GetHandleVerifier [0xf73a95+19625]\n\tchromedriver!GetHandleVerifier [0xf5cd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x76b9fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x76f882ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x76f8827e+ee]",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0x101ad03+10893]\n\tchromedriver!GetHandleVerifier [0x101ae34+109c4]\n\tchromedriver!(No symbol) [0xe31ea0]\n\tchromedriver!(No symbol) [0xe7b26a]\n\tchromedriver!(No symbol) [0xe7b50b]\n\tchromedriver!(No symbol) [0xebd022]\n\tchromedriver!(No symbol) [0xe9d7c4]\n\tchromedriver!(No symbol) [0xeba814]\n\tchromedriver!(No symbol) [0xe9d516]\n\tchromedriver!(No symbol) [0xe708c9]\n\tchromedriver!(No symbol) [0xe71684]\n\tchromedriver!GetHandleVerifier [0x12b31c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x12ae7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x12cea85+2c4615]\n\tchromedriver!GetHandleVerifier [0x10344d8+2a068]\n\tchromedriver!GetHandleVerifier [0x103bddd+3196d]\n\tchromedriver!GetHandleVerifier [0x10238e8+19478]\n\tchromedriver!GetHandleVerifier [0x1023a95+19625]\n\tchromedriver!GetHandleVerifier [0x100cd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x7562fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x775582ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x7755827e+ee]",
       "children" : [ {
-        "name" : "test_total_orders_counter_increases",
-        "uid" : "22a4088cedbec365",
-        "parentUid" : "59e5172a8cdcab346321552025a05d60",
+        "name" : "При создании заказа счётчик «Выполнено за всё время» увеличивается",
+        "uid" : "225fb79f296f9404",
+        "parentUid" : "7a8447879da42f0cc4f7e84fa81f0af7",
         "status" : "broken",
         "time" : {
-          "start" : 1778164687844,
-          "stop" : 1778164698057,
-          "duration" : 10213
+          "start" : 1778383720334,
+          "stop" : 1778383740675,
+          "duration" : 20341
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_today_orders_counter_increases",
-        "uid" : "47163aaf2771096a",
-        "parentUid" : "59e5172a8cdcab346321552025a05d60",
+        "name" : "При создании заказа счётчик «Выполнено за сегодня» увеличивается",
+        "uid" : "8ea2dca62faca327",
+        "parentUid" : "7a8447879da42f0cc4f7e84fa81f0af7",
         "status" : "broken",
         "time" : {
-          "start" : 1778164705460,
-          "stop" : 1778164715681,
-          "duration" : 10221
+          "start" : 1778383746556,
+          "stop" : 1778383766906,
+          "duration" : 20350
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_order_number_appears_in_work",
-        "uid" : "57fd0870f7370ec5",
-        "parentUid" : "59e5172a8cdcab346321552025a05d60",
+        "name" : "После оформления заказа его номер появляется в разделе «В работе»",
+        "uid" : "a42ca16d4e0d9f67",
+        "parentUid" : "7a8447879da42f0cc4f7e84fa81f0af7",
         "status" : "broken",
         "time" : {
-          "start" : 1778164725632,
-          "stop" : 1778164736949,
-          "duration" : 11317
+          "start" : 1778383773109,
+          "stop" : 1778383794031,
+          "duration" : 20922
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "59e5172a8cdcab346321552025a05d60"
+      "uid" : "7a8447879da42f0cc4f7e84fa81f0af7"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

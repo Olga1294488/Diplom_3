@@ -4,105 +4,105 @@
   "children" : [ {
     "name" : "HOME-PC",
     "children" : [ {
-      "name" : "3944-MainThread",
+      "name" : "600-MainThread",
       "children" : [ {
-        "name" : "test_ingredient_modal_opens",
-        "uid" : "25c946fef8bb9aa0",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1778164666635,
-          "stop" : 1778164666689,
-          "duration" : 54
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_close_modal_by_cross",
-        "uid" : "35841c152a81a79e",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1778164672658,
-          "stop" : 1778164673229,
-          "duration" : 571
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_order_number_appears_in_work",
-        "uid" : "57fd0870f7370ec5",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
+        "name" : "При создании заказа счётчик «Выполнено за сегодня» увеличивается",
+        "uid" : "8ea2dca62faca327",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
         "status" : "broken",
         "time" : {
-          "start" : 1778164725632,
-          "stop" : 1778164736949,
-          "duration" : 11317
+          "start" : 1778383746556,
+          "stop" : 1778383766906,
+          "duration" : 20350
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_today_orders_counter_increases",
-        "uid" : "47163aaf2771096a",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1778164705460,
-          "stop" : 1778164715681,
-          "duration" : 10221
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_order_feed_navigation",
-        "uid" : "f499f4b6cadffd22",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
+        "name" : "Всплывающее окно закрывается кликом по крестику",
+        "uid" : "933c70a24d72b58",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
         "status" : "passed",
         "time" : {
-          "start" : 1778164660883,
-          "stop" : 1778164660932,
-          "duration" : 49
+          "start" : 1778383682811,
+          "stop" : 1778383703872,
+          "duration" : 21061
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_ingredient_counter_increases",
-        "uid" : "30570daebb127acf",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
+        "name" : "Переход по клику на «Конструктор»",
+        "uid" : "42a1d458acb40367",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1778383652413,
+          "stop" : 1778383652520,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Клик на ингредиент открывает всплывающее окно с деталями",
+        "uid" : "8d5cfd3a36f29c68",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1778383672710,
+          "stop" : 1778383672760,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "После оформления заказа его номер появляется в разделе «В работе»",
+        "uid" : "a42ca16d4e0d9f67",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1778383773109,
+          "stop" : 1778383794031,
+          "duration" : 20922
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "При создании заказа счётчик «Выполнено за всё время» увеличивается",
+        "uid" : "225fb79f296f9404",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1778383720334,
+          "stop" : 1778383740675,
+          "duration" : 20341
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "При добавлении ингредиента счётчик увеличивается",
+        "uid" : "b1440e7233bdddff",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
         "status" : "failed",
         "time" : {
-          "start" : 1778164680623,
-          "stop" : 1778164681532,
-          "duration" : 909
+          "start" : 1778383713709,
+          "stop" : 1778383714302,
+          "duration" : 593
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_total_orders_counter_increases",
-        "uid" : "22a4088cedbec365",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1778164687844,
-          "stop" : 1778164698057,
-          "duration" : 10213
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_constructor_navigation",
-        "uid" : "e6b71dc7c85169a8",
-        "parentUid" : "568a221adab7837033a1024543c38c8c",
+        "name" : "Переход по клику на «Лента заказов»",
+        "uid" : "a859814b2035cd44",
+        "parentUid" : "fc0f6538630a306f06e23dc9f23b6a8b",
         "status" : "passed",
         "time" : {
-          "start" : 1778164654884,
-          "stop" : 1778164654990,
-          "duration" : 106
+          "start" : 1778383661064,
+          "stop" : 1778383662471,
+          "duration" : 1407
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "568a221adab7837033a1024543c38c8c"
+      "uid" : "fc0f6538630a306f06e23dc9f23b6a8b"
     } ],
     "uid" : "71b5e50a4d0a26a79917b38d69f0a874"
   } ]
