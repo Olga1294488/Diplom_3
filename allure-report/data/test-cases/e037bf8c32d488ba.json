@@ -1,29 +1,29 @@
 {
-  "uid" : "42a1d458acb40367",
+  "uid" : "e037bf8c32d488ba",
   "name" : "Переход по клику на «Конструктор»",
   "fullName" : "tests.ui.test_constructor.TestConstructor#test_constructor_navigation",
   "historyId" : "a322b855c3d2bab2372488548c653fae",
   "time" : {
-    "start" : 1778383652413,
-    "stop" : 1778383652520,
-    "duration" : 107
+    "start" : 1778490035939,
+    "stop" : 1778490036052,
+    "duration" : 113
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "main_page",
     "time" : {
-      "start" : 1778383650579,
-      "stop" : 1778383652413,
-      "duration" : 1834
+      "start" : 1778490034466,
+      "stop" : 1778490035939,
+      "duration" : 1473
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Открыть страницу 'https://stellarburgers.education-services.ru/'",
       "time" : {
-        "start" : 1778383650580,
-        "stop" : 1778383652413,
-        "duration" : 1833
+        "start" : 1778490034467,
+        "stop" : 1778490035939,
+        "duration" : 1472
       },
       "status" : "passed",
       "steps" : [ ],
@@ -32,64 +32,64 @@
         "name" : "url",
         "value" : "'https://stellarburgers.education-services.ru/'"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
-    "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1778383648284,
-      "stop" : 1778383650579,
-      "duration" : 2295
+      "start" : 1778490032178,
+      "stop" : 1778490034466,
+      "duration" : 2288
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1778383648249,
-      "stop" : 1778383648284,
-      "duration" : 35
+      "start" : 1778490032141,
+      "stop" : 1778490032178,
+      "duration" : 37
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Кликнуть на кнопку «Лента заказов»",
       "time" : {
-        "start" : 1778383652413,
-        "stop" : 1778383652465,
-        "duration" : 52
+        "start" : 1778490035940,
+        "stop" : 1778490035996,
+        "duration" : 56
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Кликнуть на элемент ('css selector', \"a[href='/feed']\")",
         "time" : {
-          "start" : 1778383652414,
-          "stop" : 1778383652465,
-          "duration" : 51
+          "start" : 1778490035940,
+          "stop" : 1778490035996,
+          "duration" : 56
         },
         "status" : "passed",
         "steps" : [ ],
@@ -98,31 +98,31 @@
           "name" : "locator",
           "value" : "('css selector', \"a[href='/feed']\")"
         } ],
-        "stepsCount" : 0,
-        "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 1,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
     }, {
       "name" : "Кликнуть на кнопку «Конструктор»",
       "time" : {
-        "start" : 1778383652465,
-        "stop" : 1778383652515,
-        "duration" : 50
+        "start" : 1778490035996,
+        "stop" : 1778490036047,
+        "duration" : 51
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Кликнуть на элемент ('css selector', \"a[href='/']\")",
         "time" : {
-          "start" : 1778383652465,
-          "stop" : 1778383652515,
-          "duration" : 50
+          "start" : 1778490035996,
+          "stop" : 1778490036047,
+          "duration" : 51
         },
         "status" : "passed",
         "steps" : [ ],
@@ -131,47 +131,47 @@
           "name" : "locator",
           "value" : "('css selector', \"a[href='/']\")"
         } ],
-        "stepsCount" : 0,
-        "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 1,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
-    "hasContent" : true,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1778383652521,
-      "stop" : 1778383654609,
-      "duration" : 2088
+      "start" : 1778490036054,
+      "stop" : 1778490038131,
+      "duration" : 2077
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "Stellar Burgers UI"
-  }, {
     "name" : "feature",
     "value" : "Конструктор"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers UI"
   }, {
     "name" : "parentSuite",
     "value" : "tests.ui"
@@ -186,7 +186,7 @@
     "value" : "HOME-PC"
   }, {
     "name" : "thread",
-    "value" : "600-MainThread"
+    "value" : "4196-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -210,6 +210,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "42a1d458acb40367.json",
+  "source" : "e037bf8c32d488ba.json",
   "parameterValues" : [ ]
 }

@@ -22,6 +22,13 @@ class BasePage:
         element.click()
         return self
 
+    @allure.step("Кликнуть на элемент с прокруткой {locator}")
+    def click_with_scroll(self, locator):
+        element = self.find_element(locator)
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
+        element.click()
+        return self
+
     @allure.step("Получить текст элемента {locator}")
     def get_text(self, locator):
         return self.find_element(locator).text
@@ -33,3 +40,7 @@ class BasePage:
     @allure.step("Дождаться невидимости элемента {locator}")
     def wait_invisibility(self, locator):
         return self.wait.until(EC.invisibility_of_element_located(locator))
+
+    @allure.step("Ожидать, что текст элемента {locator} станет числом")
+    def wait_for_text_to_be_digit(self, locator):
+        self.wait.until(lambda d: self.find_element(locator).text.isdigit())

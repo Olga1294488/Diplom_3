@@ -25,10 +25,7 @@ class MainPage(BasePage):
 
     @allure.step("Кликнуть на ингредиент «Флюоресцентная булка R2-D3»")
     def click_ingredient(self):
-        element = self.find_element(self.INGREDIENT)
-        self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-        self.driver.execute_script("arguments[0].click();", element)
-        # Ожидание модального окна теперь в тесте
+        self.click_with_scroll(self.INGREDIENT)
         return self
 
     @allure.step("Получить значение счётчика ингредиента")

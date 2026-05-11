@@ -1,7 +1,7 @@
 import allure
 import pytest
 from pages.ingredient_modal import IngredientModal
-from data import CONSTRUCTOR_HEADER   # предполагается, что в data.py есть эта константа
+from data import CONSTRUCTOR_HEADER   
 
 @allure.epic("Stellar Burgers UI")
 @allure.feature("Конструктор")
@@ -23,7 +23,7 @@ class TestConstructor:
         main_page.click_ingredient()
         modal = IngredientModal(main_page.driver)
         modal.wait_visibility(modal.MODAL)
-        assert modal.is_modal_displayed()   # используем метод Page Object
+        assert modal.is_modal_displayed()   
 
     @allure.title("Всплывающее окно закрывается кликом по крестику")
     def test_close_modal_by_cross(self, main_page):
@@ -36,6 +36,6 @@ class TestConstructor:
     @allure.title("При добавлении ингредиента счётчик увеличивается")
     def test_ingredient_counter_increases(self, main_page):
         initial = int(main_page.get_ingredient_counter())
-        main_page.drag_and_drop_ingredient()   # или add_ingredient_via_button()
+        main_page.drag_and_drop_ingredient()   
         new = int(main_page.get_ingredient_counter())
         assert new == initial + 1
