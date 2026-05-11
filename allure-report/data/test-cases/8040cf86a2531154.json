@@ -1,29 +1,29 @@
 {
-  "uid" : "e037bf8c32d488ba",
+  "uid" : "8040cf86a2531154",
   "name" : "Переход по клику на «Конструктор»",
   "fullName" : "tests.ui.test_constructor.TestConstructor#test_constructor_navigation",
   "historyId" : "a322b855c3d2bab2372488548c653fae",
   "time" : {
-    "start" : 1778490035939,
-    "stop" : 1778490036052,
-    "duration" : 113
+    "start" : 1778490608550,
+    "stop" : 1778490608657,
+    "duration" : 107
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "main_page",
     "time" : {
-      "start" : 1778490034466,
-      "stop" : 1778490035939,
-      "duration" : 1473
+      "start" : 1778490607044,
+      "stop" : 1778490608550,
+      "duration" : 1506
     },
     "status" : "passed",
     "steps" : [ {
       "name" : "Открыть страницу 'https://stellarburgers.education-services.ru/'",
       "time" : {
-        "start" : 1778490034467,
-        "stop" : 1778490035939,
-        "duration" : 1472
+        "start" : 1778490607045,
+        "stop" : 1778490608550,
+        "duration" : 1505
       },
       "status" : "passed",
       "steps" : [ ],
@@ -46,9 +46,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1778490032178,
-      "stop" : 1778490034466,
-      "duration" : 2288
+      "start" : 1778490604690,
+      "stop" : 1778490607044,
+      "duration" : 2354
     },
     "status" : "passed",
     "steps" : [ ],
@@ -61,9 +61,9 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1778490032141,
-      "stop" : 1778490032178,
-      "duration" : 37
+      "start" : 1778490604656,
+      "stop" : 1778490604690,
+      "duration" : 34
     },
     "status" : "passed",
     "steps" : [ ],
@@ -79,17 +79,17 @@
     "steps" : [ {
       "name" : "Кликнуть на кнопку «Лента заказов»",
       "time" : {
-        "start" : 1778490035940,
-        "stop" : 1778490035996,
-        "duration" : 56
+        "start" : 1778490608550,
+        "stop" : 1778490608607,
+        "duration" : 57
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Кликнуть на элемент ('css selector', \"a[href='/feed']\")",
         "time" : {
-          "start" : 1778490035940,
-          "stop" : 1778490035996,
-          "duration" : 56
+          "start" : 1778490608550,
+          "stop" : 1778490608607,
+          "duration" : 57
         },
         "status" : "passed",
         "steps" : [ ],
@@ -112,17 +112,17 @@
     }, {
       "name" : "Кликнуть на кнопку «Конструктор»",
       "time" : {
-        "start" : 1778490035996,
-        "stop" : 1778490036047,
-        "duration" : 51
+        "start" : 1778490608607,
+        "stop" : 1778490608652,
+        "duration" : 45
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Кликнуть на элемент ('css selector', \"a[href='/']\")",
         "time" : {
-          "start" : 1778490035996,
-          "stop" : 1778490036047,
-          "duration" : 51
+          "start" : 1778490608607,
+          "stop" : 1778490608652,
+          "duration" : 45
         },
         "status" : "passed",
         "steps" : [ ],
@@ -153,9 +153,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1778490036054,
-      "stop" : 1778490038131,
-      "duration" : 2077
+      "start" : 1778490608658,
+      "stop" : 1778490610736,
+      "duration" : 2078
     },
     "status" : "passed",
     "steps" : [ ],
@@ -167,11 +167,11 @@
     "stepsCount" : 0
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Конструктор"
-  }, {
     "name" : "epic",
     "value" : "Stellar Burgers UI"
+  }, {
+    "name" : "feature",
+    "value" : "Конструктор"
   }, {
     "name" : "parentSuite",
     "value" : "tests.ui"
@@ -186,7 +186,7 @@
     "value" : "HOME-PC"
   }, {
     "name" : "thread",
-    "value" : "4196-MainThread"
+    "value" : "9172-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -210,6 +210,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e037bf8c32d488ba.json",
+  "source" : "8040cf86a2531154.json",
   "parameterValues" : [ ]
 }

@@ -4,105 +4,105 @@
   "children" : [ {
     "name" : "HOME-PC",
     "children" : [ {
-      "name" : "4196-MainThread",
+      "name" : "9172-MainThread",
       "children" : [ {
-        "name" : "Клик на ингредиент открывает всплывающее окно с деталями",
-        "uid" : "92a417694726947",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
-        "status" : "passed",
-        "time" : {
-          "start" : 1778490055712,
-          "stop" : 1778490055796,
-          "duration" : 84
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Переход по клику на «Конструктор»",
-        "uid" : "e037bf8c32d488ba",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
+        "uid" : "8040cf86a2531154",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
         "status" : "passed",
         "time" : {
-          "start" : 1778490035939,
-          "stop" : 1778490036052,
-          "duration" : 113
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "При создании заказа счётчик «Выполнено за всё время» увеличивается",
-        "uid" : "8edc9d2f7897d2ec",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
-        "status" : "broken",
-        "time" : {
-          "start" : 1778490103025,
-          "stop" : 1778490123365,
-          "duration" : 20340
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Переход по клику на «Лента заказов»",
-        "uid" : "6bb864be03a02ff7",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
-        "status" : "passed",
-        "time" : {
-          "start" : 1778490045890,
-          "stop" : 1778490045944,
-          "duration" : 54
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Всплывающее окно закрывается кликом по крестику",
-        "uid" : "bfa5a708015d3ccc",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
-        "status" : "passed",
-        "time" : {
-          "start" : 1778490065709,
-          "stop" : 1778490086770,
-          "duration" : 21061
+          "start" : 1778490608550,
+          "stop" : 1778490608657,
+          "duration" : 107
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "При создании заказа счётчик «Выполнено за сегодня» увеличивается",
-        "uid" : "a30b1a4e99ac4daf",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
+        "uid" : "5bc0de9acb738b74",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
         "status" : "broken",
         "time" : {
-          "start" : 1778490129124,
-          "stop" : 1778490149462,
-          "duration" : 20338
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "При добавлении ингредиента счётчик увеличивается",
-        "uid" : "9a99194ea2ea1abc",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
-        "status" : "failed",
-        "time" : {
-          "start" : 1778490096550,
-          "stop" : 1778490097147,
-          "duration" : 597
+          "start" : 1778490704377,
+          "stop" : 1778490724735,
+          "duration" : 20358
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "После оформления заказа его номер появляется в разделе «В работе»",
-        "uid" : "baa7946f974cc272",
-        "parentUid" : "0cec45edb784993cf9fbe658a1406666",
+        "uid" : "90902a3f32f8b3d4",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
         "status" : "broken",
         "time" : {
-          "start" : 1778490155336,
-          "stop" : 1778490176284,
-          "duration" : 20948
+          "start" : 1778490730586,
+          "stop" : 1778490751485,
+          "duration" : 20899
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Клик на ингредиент открывает всплывающее окно с деталями",
+        "uid" : "96907dfbe0cad837",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1778490628317,
+          "stop" : 1778490628400,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "При создании заказа счётчик «Выполнено за всё время» увеличивается",
+        "uid" : "1dff65f3bcad49f0",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
+        "status" : "broken",
+        "time" : {
+          "start" : 1778490675899,
+          "stop" : 1778490696448,
+          "duration" : 20549
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Переход по клику на «Лента заказов»",
+        "uid" : "3ebd063ddf43bc52",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1778490618428,
+          "stop" : 1778490618483,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Всплывающее окно закрывается кликом по крестику",
+        "uid" : "5af6716766a215a2",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1778490638339,
+          "stop" : 1778490659414,
+          "duration" : 21075
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "При добавлении ингредиента счётчик увеличивается",
+        "uid" : "67bff5d39ce9e444",
+        "parentUid" : "a2b9c3ea0475fd22cc91390ff0eb5b12",
+        "status" : "failed",
+        "time" : {
+          "start" : 1778490669627,
+          "stop" : 1778490670230,
+          "duration" : 603
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0cec45edb784993cf9fbe658a1406666"
+      "uid" : "a2b9c3ea0475fd22cc91390ff0eb5b12"
     } ],
     "uid" : "71b5e50a4d0a26a79917b38d69f0a874"
   } ]

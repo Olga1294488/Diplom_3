@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert 2 == (0 + 1)",
       "children" : [ {
         "name" : "При добавлении ингредиента счётчик увеличивается",
-        "uid" : "9a99194ea2ea1abc",
+        "uid" : "67bff5d39ce9e444",
         "parentUid" : "04107f71ad0b0945bf9e995e7379e22a",
         "status" : "failed",
         "time" : {
-          "start" : 1778490096550,
-          "stop" : 1778490097147,
-          "duration" : 597
+          "start" : 1778490669627,
+          "stop" : 1778490670230,
+          "duration" : 603
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -27,37 +27,37 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0xe9ad03+10893]\n\tchromedriver!GetHandleVerifier [0xe9ae34+109c4]\n\tchromedriver!(No symbol) [0xcb1ea0]\n\tchromedriver!(No symbol) [0xcfb26a]\n\tchromedriver!(No symbol) [0xcfb50b]\n\tchromedriver!(No symbol) [0xd3d022]\n\tchromedriver!(No symbol) [0xd1d7c4]\n\tchromedriver!(No symbol) [0xd3a814]\n\tchromedriver!(No symbol) [0xd1d516]\n\tchromedriver!(No symbol) [0xcf08c9]\n\tchromedriver!(No symbol) [0xcf1684]\n\tchromedriver!GetHandleVerifier [0x11331c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x112e7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x114ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0xeb44d8+2a068]\n\tchromedriver!GetHandleVerifier [0xebbddd+3196d]\n\tchromedriver!GetHandleVerifier [0xea38e8+19478]\n\tchromedriver!GetHandleVerifier [0xea3a95+19625]\n\tchromedriver!GetHandleVerifier [0xe8cd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x7659fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x772282ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x7722827e+ee]",
       "children" : [ {
         "name" : "При создании заказа счётчик «Выполнено за всё время» увеличивается",
-        "uid" : "8edc9d2f7897d2ec",
+        "uid" : "1dff65f3bcad49f0",
         "parentUid" : "2c2261b0673fc14e4498c820a042c859",
         "status" : "broken",
         "time" : {
-          "start" : 1778490103025,
-          "stop" : 1778490123365,
-          "duration" : 20340
+          "start" : 1778490675899,
+          "stop" : 1778490696448,
+          "duration" : 20549
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "При создании заказа счётчик «Выполнено за сегодня» увеличивается",
-        "uid" : "a30b1a4e99ac4daf",
+        "uid" : "5bc0de9acb738b74",
         "parentUid" : "2c2261b0673fc14e4498c820a042c859",
         "status" : "broken",
         "time" : {
-          "start" : 1778490129124,
-          "stop" : 1778490149462,
-          "duration" : 20338
+          "start" : 1778490704377,
+          "stop" : 1778490724735,
+          "duration" : 20358
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "После оформления заказа его номер появляется в разделе «В работе»",
-        "uid" : "baa7946f974cc272",
+        "uid" : "90902a3f32f8b3d4",
         "parentUid" : "2c2261b0673fc14e4498c820a042c859",
         "status" : "broken",
         "time" : {
-          "start" : 1778490155336,
-          "stop" : 1778490176284,
-          "duration" : 20948
+          "start" : 1778490730586,
+          "stop" : 1778490751485,
+          "duration" : 20899
         },
         "flaky" : false,
         "parameters" : [ ]
