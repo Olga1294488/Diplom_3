@@ -1,0 +1,1 @@
+"""Пакет с Page Object для веб-приложения Stellar Burgers."""

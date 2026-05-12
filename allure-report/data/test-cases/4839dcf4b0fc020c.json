@@ -1,0 +1,329 @@
+{
+  "uid" : "4839dcf4b0fc020c",
+  "name" : "После оформления заказа его номер появляется в разделе «В работе»",
+  "fullName" : "tests.ui.test_order_feed.TestOrderFeed#test_order_number_appears_in_work",
+  "historyId" : "1d85eb4113229245c5f2446bdec2503f",
+  "time" : {
+    "start" : 1778590382775,
+    "stop" : 1778590403689,
+    "duration" : 20914
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0x6ead03+10893]\n\tchromedriver!GetHandleVerifier [0x6eae34+109c4]\n\tchromedriver!(No symbol) [0x501ea0]\n\tchromedriver!(No symbol) [0x54b26a]\n\tchromedriver!(No symbol) [0x54b50b]\n\tchromedriver!(No symbol) [0x58d022]\n\tchromedriver!(No symbol) [0x56d7c4]\n\tchromedriver!(No symbol) [0x58a814]\n\tchromedriver!(No symbol) [0x56d516]\n\tchromedriver!(No symbol) [0x5408c9]\n\tchromedriver!(No symbol) [0x541684]\n\tchromedriver!GetHandleVerifier [0x9831c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x97e7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x99ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0x7044d8+2a068]\n\tchromedriver!GetHandleVerifier [0x70bddd+3196d]\n\tchromedriver!GetHandleVerifier [0x6f38e8+19478]\n\tchromedriver!GetHandleVerifier [0x6f3a95+19625]\n\tchromedriver!GetHandleVerifier [0x6dcd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x7646fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x770882ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x7708827e+ee]",
+  "statusTrace" : "self = <ui.test_order_feed.TestOrderFeed object at 0x0000023E29DE9940>\nmain_page = <pages.main_page.MainPage object at 0x0000023E29EEE030>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"be254f7248090154a885d5c026014aa4\")>\n\n    @allure.title(\"После оформления заказа его номер появляется в разделе «В работе»\")\n    def test_order_number_appears_in_work(self, main_page, driver):\n        main_page.click_constructor()\n        main_page.drag_and_drop_ingredient()\n>       order_number = main_page.place_order()\n\ntests\\ui\\test_order_feed.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\main_page.py:48: in place_order\n    self.click(self.ORDER_BUTTON)\npages\\base_page.py:21: in click\n    element = self.wait.until(EC.element_to_be_clickable(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"be254f7248090154a885d5c026014aa4\")>\nmethod = <function element_to_be_clickable.<locals>._predicate at 0x0000023E29F1A400>, message = ''\n\n    def until(self, method: Callable[[WebDriver], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       \tchromedriver!GetHandleVerifier [0x6ead03+10893]\nE       \tchromedriver!GetHandleVerifier [0x6eae34+109c4]\nE       \tchromedriver!(No symbol) [0x501ea0]\nE       \tchromedriver!(No symbol) [0x54b26a]\nE       \tchromedriver!(No symbol) [0x54b50b]\nE       \tchromedriver!(No symbol) [0x58d022]\nE       \tchromedriver!(No symbol) [0x56d7c4]\nE       \tchromedriver!(No symbol) [0x58a814]\nE       \tchromedriver!(No symbol) [0x56d516]\nE       \tchromedriver!(No symbol) [0x5408c9]\nE       \tchromedriver!(No symbol) [0x541684]\nE       \tchromedriver!GetHandleVerifier [0x9831c4+2a8d54]\nE       \tchromedriver!GetHandleVerifier [0x97e7cd+2a435d]\nE       \tchromedriver!GetHandleVerifier [0x99ea85+2c4615]\nE       \tchromedriver!GetHandleVerifier [0x7044d8+2a068]\nE       \tchromedriver!GetHandleVerifier [0x70bddd+3196d]\nE       \tchromedriver!GetHandleVerifier [0x6f38e8+19478]\nE       \tchromedriver!GetHandleVerifier [0x6f3a95+19625]\nE       \tchromedriver!GetHandleVerifier [0x6dcd8f+291f]\nE       \tKERNEL32!BaseThreadInitThunk [0x7646fcc9+19]\nE       \tntdll!RtlGetAppContainerNamedObjectPath [0x770882ae+11e]\nE       \tntdll!RtlGetAppContainerNamedObjectPath [0x7708827e+ee]\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:101: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1778590378637,
+      "stop" : 1778590380899,
+      "duration" : 2262
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "main_page",
+    "time" : {
+      "start" : 1778590380899,
+      "stop" : 1778590382775,
+      "duration" : 1876
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть страницу 'https://stellarburgers.education-services.ru/'",
+      "time" : {
+        "start" : 1778590380900,
+        "stop" : 1778590382775,
+        "duration" : 1875
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://stellarburgers.education-services.ru/'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1778590257958,
+      "stop" : 1778590257994,
+      "duration" : 36
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0x6ead03+10893]\n\tchromedriver!GetHandleVerifier [0x6eae34+109c4]\n\tchromedriver!(No symbol) [0x501ea0]\n\tchromedriver!(No symbol) [0x54b26a]\n\tchromedriver!(No symbol) [0x54b50b]\n\tchromedriver!(No symbol) [0x58d022]\n\tchromedriver!(No symbol) [0x56d7c4]\n\tchromedriver!(No symbol) [0x58a814]\n\tchromedriver!(No symbol) [0x56d516]\n\tchromedriver!(No symbol) [0x5408c9]\n\tchromedriver!(No symbol) [0x541684]\n\tchromedriver!GetHandleVerifier [0x9831c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x97e7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x99ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0x7044d8+2a068]\n\tchromedriver!GetHandleVerifier [0x70bddd+3196d]\n\tchromedriver!GetHandleVerifier [0x6f38e8+19478]\n\tchromedriver!GetHandleVerifier [0x6f3a95+19625]\n\tchromedriver!GetHandleVerifier [0x6dcd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x7646fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x770882ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x7708827e+ee]",
+    "statusTrace" : "self = <ui.test_order_feed.TestOrderFeed object at 0x0000023E29DE9940>\nmain_page = <pages.main_page.MainPage object at 0x0000023E29EEE030>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"be254f7248090154a885d5c026014aa4\")>\n\n    @allure.title(\"После оформления заказа его номер появляется в разделе «В работе»\")\n    def test_order_number_appears_in_work(self, main_page, driver):\n        main_page.click_constructor()\n        main_page.drag_and_drop_ingredient()\n>       order_number = main_page.place_order()\n\ntests\\ui\\test_order_feed.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\main_page.py:48: in place_order\n    self.click(self.ORDER_BUTTON)\npages\\base_page.py:21: in click\n    element = self.wait.until(EC.element_to_be_clickable(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"be254f7248090154a885d5c026014aa4\")>\nmethod = <function element_to_be_clickable.<locals>._predicate at 0x0000023E29F1A400>, message = ''\n\n    def until(self, method: Callable[[WebDriver], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       \tchromedriver!GetHandleVerifier [0x6ead03+10893]\nE       \tchromedriver!GetHandleVerifier [0x6eae34+109c4]\nE       \tchromedriver!(No symbol) [0x501ea0]\nE       \tchromedriver!(No symbol) [0x54b26a]\nE       \tchromedriver!(No symbol) [0x54b50b]\nE       \tchromedriver!(No symbol) [0x58d022]\nE       \tchromedriver!(No symbol) [0x56d7c4]\nE       \tchromedriver!(No symbol) [0x58a814]\nE       \tchromedriver!(No symbol) [0x56d516]\nE       \tchromedriver!(No symbol) [0x5408c9]\nE       \tchromedriver!(No symbol) [0x541684]\nE       \tchromedriver!GetHandleVerifier [0x9831c4+2a8d54]\nE       \tchromedriver!GetHandleVerifier [0x97e7cd+2a435d]\nE       \tchromedriver!GetHandleVerifier [0x99ea85+2c4615]\nE       \tchromedriver!GetHandleVerifier [0x7044d8+2a068]\nE       \tchromedriver!GetHandleVerifier [0x70bddd+3196d]\nE       \tchromedriver!GetHandleVerifier [0x6f38e8+19478]\nE       \tchromedriver!GetHandleVerifier [0x6f3a95+19625]\nE       \tchromedriver!GetHandleVerifier [0x6dcd8f+291f]\nE       \tKERNEL32!BaseThreadInitThunk [0x7646fcc9+19]\nE       \tntdll!RtlGetAppContainerNamedObjectPath [0x770882ae+11e]\nE       \tntdll!RtlGetAppContainerNamedObjectPath [0x7708827e+ee]\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:101: TimeoutException",
+    "steps" : [ {
+      "name" : "Кликнуть на кнопку «Конструктор»",
+      "time" : {
+        "start" : 1778590382775,
+        "stop" : 1778590382828,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Кликнуть на элемент ('css selector', \"a[href='/']\")",
+        "time" : {
+          "start" : 1778590382775,
+          "stop" : 1778590382828,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"a[href='/']\")"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Добавить ингредиент перетаскиванием (drag-and-drop)",
+      "time" : {
+        "start" : 1778590382828,
+        "stop" : 1778590383405,
+        "duration" : 577
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Найти элемент ('xpath', \"//p[text()='Флюоресцентная булка R2-D3']\")",
+        "time" : {
+          "start" : 1778590382828,
+          "stop" : 1778590382836,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', \"//p[text()='Флюоресцентная булка R2-D3']\")"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Найти элемент ('css selector', '.constructor-element_pos_top')",
+        "time" : {
+          "start" : 1778590382836,
+          "stop" : 1778590382843,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '.constructor-element_pos_top')"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Получить значение счётчика ингредиента",
+        "time" : {
+          "start" : 1778590383386,
+          "stop" : 1778590383405,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Получить текст элемента ('xpath', \"//p[text()='Флюоресцентная булка R2-D3']/ancestor::a//div[contains(@class, 'counter')]//p\")",
+          "time" : {
+            "start" : 1778590383386,
+            "stop" : 1778590383405,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Найти элемент ('xpath', \"//p[text()='Флюоресцентная булка R2-D3']/ancestor::a//div[contains(@class, 'counter')]//p\")",
+            "time" : {
+              "start" : 1778590383386,
+              "stop" : 1778590383398,
+              "duration" : 12
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "locator",
+              "value" : "('xpath', \"//p[text()='Флюоресцентная булка R2-D3']/ancestor::a//div[contains(@class, 'counter')]//p\")"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', \"//p[text()='Флюоресцентная булка R2-D3']/ancestor::a//div[contains(@class, 'counter')]//p\")"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Оформить заказ",
+      "time" : {
+        "start" : 1778590383405,
+        "stop" : 1778590403688,
+        "duration" : 20283
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0x6ead03+10893]\n\tchromedriver!GetHandleVerifier [0x6eae34+109c4]\n\tchromedriver!(No symbol) [0x501ea0]\n\tchromedriver!(No symbol) [0x54b26a]\n\tchromedriver!(No symbol) [0x54b50b]\n\tchromedriver!(No symbol) [0x58d022]\n\tchromedriver!(No symbol) [0x56d7c4]\n\tchromedriver!(No symbol) [0x58a814]\n\tchromedriver!(No symbol) [0x56d516]\n\tchromedriver!(No symbol) [0x5408c9]\n\tchromedriver!(No symbol) [0x541684]\n\tchromedriver!GetHandleVerifier [0x9831c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x97e7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x99ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0x7044d8+2a068]\n\tchromedriver!GetHandleVerifier [0x70bddd+3196d]\n\tchromedriver!GetHandleVerifier [0x6f38e8+19478]\n\tchromedriver!GetHandleVerifier [0x6f3a95+19625]\n\tchromedriver!GetHandleVerifier [0x6dcd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x7646fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x770882ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x7708827e+ee]\n\n",
+      "statusTrace" : "  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\User\\Desktop\\diplom\\Diplom_3\\pages\\main_page.py\", line 48, in place_order\n    self.click(self.ORDER_BUTTON)\n    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\User\\Desktop\\diplom\\Diplom_3\\pages\\base_page.py\", line 21, in click\n    element = self.wait.until(EC.element_to_be_clickable(locator))\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 101, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "Кликнуть на элемент ('xpath', \"//button[text()='Оформить заказ']\")",
+        "time" : {
+          "start" : 1778590383405,
+          "stop" : 1778590403687,
+          "duration" : 20282
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0x6ead03+10893]\n\tchromedriver!GetHandleVerifier [0x6eae34+109c4]\n\tchromedriver!(No symbol) [0x501ea0]\n\tchromedriver!(No symbol) [0x54b26a]\n\tchromedriver!(No symbol) [0x54b50b]\n\tchromedriver!(No symbol) [0x58d022]\n\tchromedriver!(No symbol) [0x56d7c4]\n\tchromedriver!(No symbol) [0x58a814]\n\tchromedriver!(No symbol) [0x56d516]\n\tchromedriver!(No symbol) [0x5408c9]\n\tchromedriver!(No symbol) [0x541684]\n\tchromedriver!GetHandleVerifier [0x9831c4+2a8d54]\n\tchromedriver!GetHandleVerifier [0x97e7cd+2a435d]\n\tchromedriver!GetHandleVerifier [0x99ea85+2c4615]\n\tchromedriver!GetHandleVerifier [0x7044d8+2a068]\n\tchromedriver!GetHandleVerifier [0x70bddd+3196d]\n\tchromedriver!GetHandleVerifier [0x6f38e8+19478]\n\tchromedriver!GetHandleVerifier [0x6f3a95+19625]\n\tchromedriver!GetHandleVerifier [0x6dcd8f+291f]\n\tKERNEL32!BaseThreadInitThunk [0x7646fcc9+19]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x770882ae+11e]\n\tntdll!RtlGetAppContainerNamedObjectPath [0x7708827e+ee]\n\n",
+        "statusTrace" : "  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\User\\Desktop\\diplom\\Diplom_3\\pages\\base_page.py\", line 21, in click\n    element = self.wait.until(EC.element_to_be_clickable(locator))\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 101, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', \"//button[text()='Оформить заказ']\")"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1778590403697,
+      "stop" : 1778590405788,
+      "duration" : 2091
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Лента заказов"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers UI"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.ui"
+  }, {
+    "name" : "suite",
+    "value" : "test_order_feed"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrderFeed"
+  }, {
+    "name" : "host",
+    "value" : "HOME-PC"
+  }, {
+    "name" : "thread",
+    "value" : "5636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.ui.test_order_feed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4839dcf4b0fc020c.json",
+  "parameterValues" : [ ]
+}
