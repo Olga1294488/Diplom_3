@@ -1,81 +1,81 @@
 [ {
-  "uid" : "8040cf86a2531154",
-  "name" : "Переход по клику на «Конструктор»",
-  "time" : {
-    "start" : 1778490608550,
-    "stop" : 1778490608657,
-    "duration" : 107
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5bc0de9acb738b74",
-  "name" : "При создании заказа счётчик «Выполнено за сегодня» увеличивается",
-  "time" : {
-    "start" : 1778490704377,
-    "stop" : 1778490724735,
-    "duration" : 20358
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "90902a3f32f8b3d4",
-  "name" : "После оформления заказа его номер появляется в разделе «В работе»",
-  "time" : {
-    "start" : 1778490730586,
-    "stop" : 1778490751485,
-    "duration" : 20899
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "96907dfbe0cad837",
-  "name" : "Клик на ингредиент открывает всплывающее окно с деталями",
-  "time" : {
-    "start" : 1778490628317,
-    "stop" : 1778490628400,
-    "duration" : 83
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1dff65f3bcad49f0",
+  "uid" : "badecc3cd0c4c772",
   "name" : "При создании заказа счётчик «Выполнено за всё время» увеличивается",
   "time" : {
-    "start" : 1778490675899,
-    "stop" : 1778490696448,
-    "duration" : 20549
+    "start" : 1778590329567,
+    "stop" : 1778590349926,
+    "duration" : 20359
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "3ebd063ddf43bc52",
+  "uid" : "64ccdb2a83694194",
   "name" : "Переход по клику на «Лента заказов»",
   "time" : {
-    "start" : 1778490618428,
-    "stop" : 1778490618483,
-    "duration" : 55
+    "start" : 1778590272200,
+    "stop" : 1778590272262,
+    "duration" : 62
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5af6716766a215a2",
+  "uid" : "4839dcf4b0fc020c",
+  "name" : "После оформления заказа его номер появляется в разделе «В работе»",
+  "time" : {
+    "start" : 1778590382775,
+    "stop" : 1778590403689,
+    "duration" : 20914
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c407c1d5d31ab765",
+  "name" : "Переход по клику на «Конструктор»",
+  "time" : {
+    "start" : 1778590261646,
+    "stop" : 1778590261952,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d649261b81bef5",
   "name" : "Всплывающее окно закрывается кликом по крестику",
   "time" : {
-    "start" : 1778490638339,
-    "stop" : 1778490659414,
+    "start" : 1778590292148,
+    "stop" : 1778590313223,
     "duration" : 21075
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "67bff5d39ce9e444",
+  "uid" : "a5a46cf1e850612a",
   "name" : "При добавлении ингредиента счётчик увеличивается",
   "time" : {
-    "start" : 1778490669627,
-    "stop" : 1778490670230,
-    "duration" : 603
+    "start" : 1778590323096,
+    "stop" : 1778590323716,
+    "duration" : 620
   },
   "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "60d0597a68c1a024",
+  "name" : "При создании заказа счётчик «Выполнено за сегодня» увеличивается",
+  "time" : {
+    "start" : 1778590356199,
+    "stop" : 1778590376538,
+    "duration" : 20339
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "44adfdc958e303af",
+  "name" : "Клик на ингредиент открывает всплывающее окно",
+  "time" : {
+    "start" : 1778590282162,
+    "stop" : 1778590282242,
+    "duration" : 80
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

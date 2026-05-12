@@ -18,16 +18,5 @@ class IngredientModal(BasePage):
         self.click(self.CLOSE_BUTTON)
         self.wait_invisibility(self.MODAL)
         return self
-    
-    def test_ingredient_modal_opens(self, main_page):
-        main_page.click_ingredient()
-        modal = IngredientModal(main_page.driver)
-        modal.wait_visibility(modal.MODAL)   
-        assert modal.is_modal_displayed()
-
-    def test_close_modal_by_cross(self, main_page):
-        main_page.click_ingredient()
-        modal = IngredientModal(main_page.driver)
-        modal.wait_visibility(modal.MODAL)  
-        modal.close_modal()
-        assert not modal.is_modal_displayed()
+  
+   

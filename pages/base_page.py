@@ -44,3 +44,11 @@ class BasePage:
     @allure.step("Ожидать, что текст элемента {locator} станет числом")
     def wait_for_text_to_be_digit(self, locator):
         self.wait.until(lambda d: self.find_element(locator).text.isdigit())
+
+    @allure.step("Получить исходный код страницы")
+    def get_page_source(self):
+        return self.driver.page_source
+
+    @allure.step("Получить текущий URL")
+    def get_current_url(self):
+        return self.driver.current_url
